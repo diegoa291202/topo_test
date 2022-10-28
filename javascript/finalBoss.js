@@ -5,6 +5,17 @@ dañoXgolpe = 10;
 
 puntosPasarNivel = 50; /* puntos */
 puntosXmatarTopo = 10;
+/*creando la variable score
+var score = 0
+//creando la funcion guardarPuntos
+function guardarPuntos(){
+var text = "Puntos:   " + score;
+//modificando la fuente del texto
+ctx.font = "20px Arial";
+ctx.fillStyle = "white";
+//escribir la variable del score
+ctx.fillText(text,10,30);
+}*/
 
 function restarTiempo(){
     if (document.getElementById("iniciarJuego").onclick){
@@ -147,15 +158,16 @@ function intro1(){
 //                                           EFECTOS DE SONIDO
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// se modifico algunos parametros del sonido para ver el cambio de sonido en las balas
 var efecto1 = new Audio("../sonidos/golpe.mp3"); /* sonido bala */
 var efect1 = 0;
 function fx1(){
     if (document.getElementById("boss").onclick){
             if(efect1 == 0){
-                efect1 = 1;
+                efect1 = 0.1;
                 efecto1.play();
-                efecto1.playbackRate = 1;
-                efecto1.volume = 0.3; /* volumen efecto 0= mute 1=maximo volumen */
+                efecto1.playbackRate = 0.1;
+                efecto1.volume = 0.1; /* volumen efecto 0= mute 1=maximo volumen */
                 
                 /* setTimeout(stop, Math.random()*50); */
 
@@ -187,7 +199,7 @@ function fx2(){
                 efect2 = 1;
                 efecto2.play();
                 efecto2.playbackRate = 1;
-                efecto2.volume = 0.5; /* volumen efecto 0= mute 1=maximo volumen */
+                efecto2.volume = 0.1; /* volumen efecto 0= mute 1=maximo volumen */
                 
                 /* setTimeout(stop, Math.random()*50); */
 
@@ -361,20 +373,36 @@ function general(){
 }
 //
 //           RELOJ
-//
-momentoActual = new Date()
+//aqui esta el reloj: Eror 2, el reloj no se mueve
+// El erorr estaba en que faltaba los parametros del reloj ademas que no se habia inicializado
+/*momentoActual = new Date()
 hora = momentoActual.getHours()
 minuto = momentoActual.getMinutes()
 segundo = momentoActual.getSeconds()
-var horaImprimible = hora + " : " + minuto + " : " + segundo
+var horaImprimible = hora + " : " + minuto + " : " + segundo*/
 function mueveReloj(){
     momentoActual = new Date()
     hora = momentoActual.getHours()
     minuto = momentoActual.getMinutes()
     segundo = momentoActual.getSeconds()
 
+    //Faltaban estos parametros
+    str_segundo = new String (segundo)
+    if (str_segundo.length == 1)
+       segundo = "0" + segundo
+
+    str_minuto = new String (minuto)
+    if (str_minuto.length == 1)
+       minuto = "0" + minuto
+
+    str_hora = new String (hora)
+    if (str_hora.length == 1)
+       hora = "0" + hora
+
     horaImprimible = hora + " : " + minuto + " : " + segundo
 
     document.form_reloj.reloj.value = horaImprimible
+    setTimeout("mueveReloj()",1000)
 }
-setTimeout("mueveReloj()",1000)
+//setTimeout esta fuera del codigo por eso no inicializa
+//setTimeout("mueveReloj()",1000)
