@@ -11,14 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Zen+Loop&display=swap" rel="stylesheet">
 </head>
-<body>
+ <!-- Error 2: no se inicializa la variable mueveReloj()
+se procede a inicializarla Prueba de humo -->
+<body onload="mueveReloj()">
+
     <!-- PANTALLA DE INICIO -->
     <div id="contenedorInicioJuego">
         <article >
             <div id="bienvenidosNivel4">
                 <div >
                     <p id="nivel"> PREPARATE PARA LA BATALLA FINAL !!!!</p>
-                    <button id="iniciarJuego" onclick="iniciarJuego()"><p id="text-nivel">INICIAR</p> </button>
+                    <!-- Error 1: El boton INICIAR se muebe cuando pasas click encima de este
+                                se soluciono en finalboss.css-->
+                    <button id="iniciarJuego" onclick="iniciarJuego()"><p id="text-nivel">INICIAR</p></button>
                 </div>
             </div>
         </article>
@@ -70,6 +75,7 @@
                 
                     </div>
                     <div id="puntos"> 
+                         <!-- Error 4: No hay un parametro que guarde los puntos: Prueba Usabilidad -->
                         <p>PUNTOS &nbsp;&nbsp;&nbsp;&nbsp;0/50</p><!-- inicial -->
                     </div>
                 </div>
@@ -83,8 +89,10 @@
                 </div> -->
                 <div id="reloj">
                     <form name="form_reloj">
-                        <!-- <input type="text" name="reloj" size="10"> -->
-                        <input type="text" name="reloj" size="10" >
+                        <!-- Error 3: el usuario puede cambiar el texto del reloj
+                            Se corrigio agregando onfocus="window.document.form_reloj.reloj.blur()"
+                            para que el usuario no cambie los valores del reloj Prueba de Humo-->
+                        <input type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()"> >
                     </form>
                 </div>
             </div>
