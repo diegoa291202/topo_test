@@ -1,7 +1,7 @@
 puntos = 0;
 tiempo =  80 ;
 vidaBoss= 999;
-dañoXgolpe = 10;
+dañoXgolpe = 200;
 
 puntosPasarNivel = 50; /* puntos */
 puntosXmatarTopo = 10;
@@ -139,7 +139,6 @@ function intro1(){
                 intro.play();
                 intro.volume = 0.5;
                 intro.loop = true;
-               
             }else{
                 intr = 0;
                 intro.pause();
@@ -258,6 +257,7 @@ function boss(){
         fx1() ;
         document.getElementById("boss").style.display = "none";
         setTimeout(aparecerBoss,Math.round(Math.random()* 1000));
+        //Se cambia 10 por dañoxgolpe
         vidaBoss-= 10; //daño que se le hace al boss - Diego
         score += 1;
         hpBoss = vidaBoss - dañoXgolpe;

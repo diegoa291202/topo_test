@@ -41,6 +41,8 @@ var dañoXgolpe11 = 1;
 var vidaTopo12 = 3;
 var dañoXgolpe12 = 1;
 
+
+//Al modificarse puntosPasarNivel solo afecta en lo visual no afecta en la funcion para pasar al siguiente nivel
 puntosPasarNivel = 50; /* puntos */
 puntosXmatarTopo = 10; /* puntos */
 
