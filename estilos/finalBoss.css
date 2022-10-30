@@ -66,8 +66,9 @@ box-sizing: border-box;
  text-transform: uppercase;
  overflow: hidden;
  /*Transicion del juego para que el iniciar cuando baje
- se vea fluido*/
- transition: 1s all ease;
+ se vea fluido
+ transition: 1s all ease;*/
+ transition: all 400ms !important;
  background-color: rgba(0, 0, 0, 0.3);
 
 }
@@ -80,6 +81,7 @@ INICIAR baje, y era este
 /*transform: translateY(100%);*/
 
 /*ahora el boton INICIAR ya no cambia de posicion*/
+
 background-color: red;
 color: white;
 }
@@ -91,7 +93,7 @@ font-family: 'Dancing Script', cursive;
 
 }
 #bienvenidosNivel4{
-
+    
 padding-top: 10vh;
     
 
