@@ -5,9 +5,11 @@
 #contenedorInicioNivel1{
     display: none;
 }
+
 /* #contenedorInicioJuego{
     display: none;
 } */
+
 #contenedor-texto-nivel{
     float: left;
     /* background-color: rgba(0, 0, 0, 0.05); */
