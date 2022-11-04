@@ -1299,6 +1299,8 @@ if (document.getElementById("topo12").onclick){
 /**************************************************************************** */
 // RELOJ
 ////
+
+//Aqui esta el error del Reloj  -->
 momentoActual = new Date()
 hora = momentoActual.getHours()
 minuto = momentoActual.getMinutes()
