@@ -55,11 +55,12 @@
   overflow: hidden;
   transition: 1s all ease;
   background-color: rgba(0, 0, 0, 0.3);
-
  }
-
  #iniciarJuego:hover{
-  transform: translateY(100%);
+  /*Eror encontrado 2: Se realizo prueba de Humo 
+resultado: se encontro el parametro que hacia que el boton
+INICIAR baje, y era este  /*transform: translateY(100%);*/
+/*ahora el boton INICIAR ya no cambia de posicion*/
   background-color: red;
   color: white;
  }
