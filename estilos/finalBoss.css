@@ -52,6 +52,7 @@ margin-left: 23vw;
 box-sizing: border-box;
 }
 
+
 #iniciarJuego{
  position: relative;
  display: block;
@@ -65,12 +66,17 @@ box-sizing: border-box;
  padding: 14px 60px;
  text-transform: uppercase;
  overflow: hidden;
- /*Transicion del juego para que el iniciar cuando baje
+ /*
+ Transicion del juego para que el iniciar cuando baje
  se vea fluido
  transition: 1s all ease;*/
  transition: all 400ms !important;
  background-color: rgba(0, 0, 0, 0.3);
-
+}
+.form-group{
+    margin-bottom:1rem;
+    box-sizing: border-box;
+    display: block;
 }
 
 #iniciarJuego:hover{
@@ -101,6 +107,7 @@ padding-top: 10vh;
 
 
 }
+
 
 /***************************************************************************************
 
