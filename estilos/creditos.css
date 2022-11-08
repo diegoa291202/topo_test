@@ -213,30 +213,26 @@ h1 sub
   0% { top: 100%; }
   100% { top: -170%; }
 }
-#regresar{
-  color: white;
-  
-  margin-left: 70vw;
-  margin-top: 25vw;
-  
-}
 #regresar p{
   color: red;
-  font-size: 3vw;
+  font-size: 2vw;
   margin: 0;
-  padding: 0;
-
-  
+  padding: 1px;
 }
-#regresar button{
+#regresar{
   background-color: yellow;
-  margin-top: 2vw;
-  margin-left: 0.5vw;
+  /* se movio los parametros para que el 
+  boton se vuelva 
+  mas responsive*/
+  margin-top: 1vw;
+  margin-left: 80vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border-radius: 30px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  /*se elimino el border radius para
+  que el boton no cambie de forma
+  border-radius: 20px;*/
 }
 #regresar button:hover{
   background-color: white;
