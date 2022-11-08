@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Zen+Loop&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="mueveReloj()">
     <div id="contenedorInicioJuego">
         
-        <article >
-                <div >
+        <article>
+                <div>
                     <p id="nivel"> NIVEL 2</p>
                     <button id="iniciarJuego" onclick="iniciarJuego()"><p id="text-nivel2">INICIAR</p> </button>
                 </div>
@@ -150,8 +150,10 @@
                 </div> 
                 <div id="reloj">
                     <form name="form_reloj">
-                        <!-- <input type="text" name="reloj" size="10"> -->
-                        <input type="text" name="reloj" size="10" >
+                        <!-- Error 3: el usuario puede cambiar el texto del reloj
+                            Se corrigio agregando onfocus="window.document.form_reloj.reloj.blur()"
+                            para que el usuario no cambie los valores del reloj Prueba de Humo-->
+                        <input type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()"> >
                     </form>
                 </div>
             </div>
