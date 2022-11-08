@@ -66,6 +66,9 @@ function iniciarJuego(){
         }
     }
 }
+
+
+
 function stop(){
     musicaFondo();
     music1.pause();
@@ -372,21 +375,25 @@ function general(){
     
 }
 //
-//           RELOJ
-//aqui esta el reloj: Eror 2, el reloj no se mueve
-// El erorr estaba en que faltaba los parametros del reloj ademas que no se habia inicializado
+
 /*momentoActual = new Date()
 hora = momentoActual.getHours()
 minuto = momentoActual.getMinutes()
 segundo = momentoActual.getSeconds()
 var horaImprimible = hora + " : " + minuto + " : " + segundo*/
+
+//           RELOJ
+//aqui esta el reloj: Eror 2, el reloj no se mueve
+// El erorr estaba en que faltaba los parametros del reloj ademas 
+//que no se habia inicializado.
+//Se corrigio iniciando la funcion mueve reloj y...
 function mueveReloj(){
     momentoActual = new Date()
     hora = momentoActual.getHours()
     minuto = momentoActual.getMinutes()
     segundo = momentoActual.getSeconds()
 
-    //Faltaban estos parametros
+//.. agregando estos parametros 
     str_segundo = new String (segundo)
     if (str_segundo.length == 1)
        segundo = "0" + segundo
@@ -405,4 +412,5 @@ function mueveReloj(){
     setTimeout("mueveReloj()",1000)
 }
 //setTimeout esta fuera del codigo por eso no inicializa
+//el reloj
 //setTimeout("mueveReloj()",1000)
