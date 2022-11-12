@@ -258,9 +258,9 @@ function boss(){
         document.getElementById("boss").style.display = "none";
         setTimeout(aparecerBoss,Math.round(Math.random()* 1000));
         //Se cambia 10 por dañoxgolpe
-        vidaBoss-= 10; //daño que se le hace al boss - Diego
+        vidaBoss-= dañoXgolpe; //daño que se le hace al boss - Diego
         score += 1;
-        hpBoss = vidaBoss - dañoXgolpe;
+        hpBoss = vidaBoss;//se eliminar dañoXgolpe
         document.getElementById("hp").textContent = hpBoss + " " + "/";
         document.getElementById("hp").style = "color:white", "font-size: 0.7vw;";
         document.getElementById("puntuacion").innerHTML = "SCORE" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + score;
@@ -357,7 +357,7 @@ function aparecerBoss(){
     }
 }
  
-function golpear(){
+/*function golpear(){
     if (document.getElementById("boss").onclick){
         vidaBoss--;
         score += 1;
@@ -366,7 +366,7 @@ function golpear(){
         
         document.getElementById("puntuacion").innerHTML = "SCORE" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + score;
     }
-}
+}*/
 function general(){
     boss();
     

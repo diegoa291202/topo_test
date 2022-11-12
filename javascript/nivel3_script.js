@@ -86,7 +86,7 @@ function desaparecerTopo1(){
         } 
         
         if (hpTopo1 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo1").src  = "../imagenes/rip.png ";
@@ -146,7 +146,7 @@ function general1(){
     desaparecerTopo1();
     desapareceGolpe1();
      
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -208,7 +208,7 @@ function desaparecerTopo2(){
         }
 
         if (hpTopo2 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo2").src  = "../imagenes/rip.png ";
@@ -246,7 +246,7 @@ function aparecerGolpe2(){
 function general2(){
     desaparecerTopo2();
     desapareceGolpe2();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -293,7 +293,7 @@ function desaparecerTopo3(){
         }
         
         if (hpTopo3 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo3").src  = "../imagenes/rip.png ";
@@ -331,7 +331,7 @@ function aparecerGolpe3(){
 function general3(){
     desaparecerTopo3();
     desapareceGolpe3();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -377,7 +377,7 @@ function desaparecerTopo4(){
         }
 
         if (hpTopo4 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo4").src  = "../imagenes/rip.png ";
@@ -415,7 +415,7 @@ function aparecerGolpe4(){
 function general4(){
     desaparecerTopo4();
     desapareceGolpe4();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -461,7 +461,7 @@ function desaparecerTopo5(){
         }
         
         if (hpTopo5 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo5").src  = "../imagenes/rip.png ";
@@ -499,7 +499,7 @@ function aparecerGolpe5(){
 function general5(){
     desaparecerTopo5();
     desapareceGolpe5();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -545,7 +545,7 @@ function desaparecerTopo6(){
         }
         
         if (hpTopo6 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo6").src  = "../imagenes/rip.png ";
@@ -583,7 +583,7 @@ function aparecerGolpe6(){
 function general6(){
     desaparecerTopo6();
     desapareceGolpe6();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -629,7 +629,7 @@ function desaparecerTopo7(){
         }
         
         if (hpTopo7 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo7").src  = "../imagenes/rip.png ";
@@ -667,7 +667,7 @@ function aparecerGolpe7(){
 function general7(){
     desaparecerTopo7();
     desapareceGolpe7();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -712,7 +712,7 @@ function desaparecerTopo8(){
         }
 
         if (hpTopo8 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo8").src  = "../imagenes/rip.png ";
@@ -750,7 +750,7 @@ function aparecerGolpe8(){
 function general8(){
     desaparecerTopo8();
     desapareceGolpe8();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -796,7 +796,7 @@ function desaparecerTopo9(){
         }
         
         if (hpTopo9 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo9").src  = "../imagenes/rip.png ";
@@ -834,7 +834,7 @@ function aparecerGolpe9(){
 function general9(){
     desaparecerTopo9();
     desapareceGolpe9();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -880,7 +880,7 @@ function desaparecerTopo10(){
         }
 
         if (hpTopo10 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo10").src  = "../imagenes/rip.png ";
@@ -918,7 +918,7 @@ function aparecerGolpe10(){
 function general10(){
     desaparecerTopo10();
     desapareceGolpe10();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         
         tiempo = 50;
         puntos = 0;
@@ -964,7 +964,7 @@ function desaparecerTopo11(){
         }
 
         if (hpTopo11 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo11").src  = "../imagenes/rip.png ";
@@ -1002,7 +1002,7 @@ function aparecerGolpe11(){
 function general11(){
     desaparecerTopo11();
     desapareceGolpe11();
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
         /* alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -1053,7 +1053,7 @@ function desaparecerTopo12(){
         }
         
         if (hpTopo12 == 0){
-            puntos += 10;           
+            puntos += puntosXmatarTopo;           
             document.getElementById("puntos").innerHTML = "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
             /* document.getElementById("topo").style.display = "none"; */
             document.getElementById("topo12").src  = "../imagenes/rip.png ";
@@ -1092,7 +1092,7 @@ function general12(){
     desaparecerTopo12();
     desapareceGolpe12();
     
-    if (puntos == 50){
+    if (puntos == puntosPasarNivel){
        /*  alert("Ganastes, eres lo maximo, como tu no hay otro!!!") */
         tiempo = 50;
         puntos = 0;
@@ -1448,6 +1448,7 @@ minuto = momentoActual.getMinutes()
 segundo = momentoActual.getSeconds()
 var horaImprimible = hora + " : " + minuto + " : " + segundo
 function mueveReloj(){
+    document.getElementById("puntos").innerHTML =  "PUNTOS " + "&nbsp;&nbsp;&nbsp;" + puntos + "/" + puntosPasarNivel;
     momentoActual = new Date()
     hora = momentoActual.getHours()
     minuto = momentoActual.getMinutes()
