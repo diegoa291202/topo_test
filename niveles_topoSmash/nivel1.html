@@ -174,10 +174,12 @@
                     <div id="creditos">
                         <button><a  href="Creditos.html"><p>CREDITOS</p></a></button>
                     </div>
+                     <!-- Error 3: el usuario puede cambiar el texto del reloj
+                                Se corrigio agregando onfocus="window.document.form_reloj.reloj.blur()"
+                                para que el usuario no cambie los valores del reloj Prueba de Humo-->
                     <div id="reloj">
                         <form name="form_reloj">
-                            <!-- <input type="text" name="reloj" size="10"> -->
-                            <input type="text" name="reloj" size="10" >
+                            <input type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
                         </form>
                     </div>
                     

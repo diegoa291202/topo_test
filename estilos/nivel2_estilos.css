@@ -40,6 +40,12 @@
     padding-bottom: 0.5vw;
     border-radius: 10%;
 }
+
+#iniciarJuego:hover{
+    background-color: red;
+    color: white;
+    }
+
 #nivel{
     color: white;
     font-size: 2vw;

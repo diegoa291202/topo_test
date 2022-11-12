@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
 html, article { height: 100%; }
-article { display: flex; justify-content: center; align-items: center; margin:20px 0; text-align:center; 
+article { display: flex; justify-content: center; align-items: center; margin:0px; text-align:center; 
     overflow:hidden; position: fixed; }
 
 h1 {
