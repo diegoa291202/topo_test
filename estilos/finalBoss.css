@@ -54,16 +54,19 @@ box-sizing: border-box;
 
 
 #iniciarJuego{
+ /*
+ Se modifico el estilo del input Iniciar
+ se quito el padding como el border-radius ya que 
+ eran los causante del aumento de dimension al 
+ manipular el zoom de cualquier navegador.
+ */
  position: relative;
  display: block;
  color: white;
- font-size: 50px !important;
- text-decoration: none;
- margin-left: 40vw;
+ font-size: 3vw;
+ margin-left: 43vw;
  margin-top: 4vw;
- border: 2px solid #1a613a;
- border-radius: 5px;
- padding: 14px 60px;
+ border: 2px  #1a613a;
  text-transform: uppercase;
  overflow: hidden;
  /*
