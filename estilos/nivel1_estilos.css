@@ -258,6 +258,8 @@
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     border-radius: 10%;
+    transition: all 2s; 
+    /* se agrego esta linea para que no se valla el boton de creditos */
 }
 #creditos button:hover{
     background-color: red;
