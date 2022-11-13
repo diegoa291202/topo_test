@@ -21,7 +21,7 @@
     position: relative;
     float: left;
     color: gray;
-    
+    transition: all 1s;
 }
 
 .button {
@@ -42,7 +42,7 @@
     margin-left: 40vw;
     background-color: greenyellow;
     border:2px white solid;
-    transition: all 2s;
+    transition: all 0s;
 }
 .button:hover{
     background-color: white;

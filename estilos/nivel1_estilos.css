@@ -258,7 +258,7 @@
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     border-radius: 10%;
-    transition: all 2s; 
+    transition: all 1s; 
     /* se agrego esta linea para que no se valla el boton de creditos */
 }
 #creditos button:hover{
@@ -275,7 +275,7 @@
     margin-top: 5vw;
     margin-left: -5.8vw; 
     
-    transition: all 5s;
+    transition: all 0s;
     width: 3.8vw;
     height: 4.75vw;
 }
