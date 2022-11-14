@@ -45,7 +45,7 @@ var dañoXgolpe12 = 1;
 //Al modificarse puntosPasarNivel solo afecta en lo visual no afecta en la funcion para pasar al siguiente nivel
 puntosPasarNivel = 50; /* puntos */
 //Al modificarse puntosXmatarTopo no afecta en la funcion ni en lo visual
-puntosXmatarTopo = 20; /* puntos */
+puntosXmatarTopo = 10; /* puntos */
 
 
 // //////////////////////////////////////////////////////////////////////
@@ -1028,39 +1028,28 @@ function stop(){
     music1.currentTime = 0;
     
 }
-
-function optionMusica(){
-    if (document.getElementById("musica").onclick){
-        document.getElementById("musica").style.display = "none";
-        document.getElementById("pausa-play").style.display = "block";
-        document.getElementById("stop").style.display = "block";
-    }
-}
-
-
 function musicaFondo(){
 
-if (document.getElementById("pausa-play").onclick){
-        if(count1 == 0){
-            count1 = 1;
-            music1.play();
-            music1.loop = true;
-            music1.volume = 0.5;
-            document.getElementById("pausa-play").innerHTML = "PAUSE";
-            
-        }else{
-            count1 = 0;
-            music1.pause();
-            document.getElementById("pausa-play").innerHTML = "PLAY";
-        }
+    if (document.getElementById("musica").onclick){
+            if(count1 == 0){
+                count1 = 1;
+                music1.play();
+                music1.loop = true;
+                document.getElementById("musica").innerHTML = "🔈";
+                
+            }else{
+                count1 = 0;
+                music1.pause();
+                document.getElementById("musica").innerHTML = "🔊";
+            }
+        } 
     } 
-} 
-function stop(){
-    musicaFondo();
-    music1.pause();
-    music1.currentTime = 0;
-    
-} 
+    function stop(){
+        musicaFondo();
+        music1.pause();
+        music1.currentTime = 0;
+        
+    } 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //                                           EFECTOS DE SONIDO  = fx + numero del topo

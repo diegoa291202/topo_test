@@ -1204,38 +1204,28 @@ function stop(){
     music1.currentTime = 0;
     
 }
-
-function optionMusica(){
-    if (document.getElementById("musica").onclick){
-        document.getElementById("musica").style.display = "none";
-        document.getElementById("pausa-play").style.display = "block";
-        document.getElementById("stop").style.display = "block";
-    }
-}
-
-
 function musicaFondo(){
 
-if (document.getElementById("pausa-play").onclick){
-        if(count1 == 0){
-            count1 = 1;
-            music1.play();
-            music1.volume = 0.5;
-            music1.loop = true;
-            document.getElementById("pausa-play").innerHTML = "PAUSE";
-        }else{
-            count1 = 0;
-            music1.pause();
-            document.getElementById("pausa-play").innerHTML = "PLAY";
-        }
+    if (document.getElementById("musica").onclick){
+            if(count1 == 0){
+                count1 = 1;
+                music1.play();
+                music1.loop = true;
+                document.getElementById("musica").innerHTML = "🔈";
+                
+            }else{
+                count1 = 0;
+                music1.pause();
+                document.getElementById("musica").innerHTML = "🔊";
+            }
+        } 
     } 
-} 
-function stop(){
-    musicaFondo();
-    music1.pause();
-    music1.currentTime = 0;
-    
-} 
+    function stop(){
+        musicaFondo();
+        music1.pause();
+        music1.currentTime = 0;
+        
+    } 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //                                           EFECTOS DE SONIDO
