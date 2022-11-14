@@ -1,7 +1,14 @@
 puntos = 0;
-tiempo =  80 ;
-vidaBoss= 999;
-dañoXgolpe = 200;
+tiempo =  6000000000000000;
+vidaBoss= 1000;
+dañoXgolpe = 25;
+/*
+Se modifico el tiempo del nivel como tambien
+la vida del Boss y el daño del golpe del jugador,
+ya que antes era muy dificil ganar este nivel por lo
+descomunalmente disparejo que estaba la vida del Boss y 
+el daño del golpe del jugador.
+*/
 
 puntosPasarNivel = 50; /* puntos */
 puntosXmatarTopo = 10;
@@ -75,28 +82,26 @@ function stop(){
     music1.currentTime = 0;
 }
 
-function optionMusica(){
-    if (document.getElementById("musica").onclick){
-        document.getElementById("musica").style.display = "none";
-        document.getElementById("pausa-play").style.display = "block";
-        document.getElementById("stop").style.display = "block";
-    }
-}
-
+/*
+Se elimino la funcion de optionMusica ya que era 
+la responsable del "seguro" del boton de musica.
+Ademas de modificar la funcion de musicaFondo para que deje de estar
+en segundo plano y pasa a ser la funcion unica del boton.
+*/
 
 function musicaFondo(){
 
-if (document.getElementById("pausa-play").onclick){
+if (document.getElementById("musica").onclick){
         if(count1 == 0){
             count1 = 1;
             music1.play();
             music1.loop = true;
-            document.getElementById("pausa-play").innerHTML = "PAUSE";
+            document.getElementById("musica").innerHTML = "🔈";
             
         }else{
             count1 = 0;
             music1.pause();
-            document.getElementById("pausa-play").innerHTML = "PLAY";
+            document.getElementById("musica").innerHTML = "🔊";
         }
     } 
 } 
@@ -201,7 +206,7 @@ function fx2(){
                 efect2 = 1;
                 efecto2.play();
                 efecto2.playbackRate = 1;
-                efecto2.volume = 0.1; /* volumen efecto 0= mute 1=maximo volumen */
+                efecto2.volume = 0; /* volumen efecto 0= mute 1=maximo volumen */
                 
                 /* setTimeout(stop, Math.random()*50); */
 
@@ -233,7 +238,7 @@ function fx3(){
                 efect3 = 1;
                 efecto3.play();
                 efecto3.playbackRate = 1;
-                efecto3.volume = 0.5; /* volumen efecto 0= mute 1=maximo volumen */
+                efecto3.volume = 0; /* volumen efecto 0= mute 1=maximo volumen */
                 
                 /* setTimeout(stop, Math.random()*50); */
 

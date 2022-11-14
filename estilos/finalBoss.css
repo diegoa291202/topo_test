@@ -222,16 +222,17 @@ padding-top: 10vh;
 }
 #musica{
     background-color: transparent;
-    /* color: white; */
-    font-size: 1.3vw;
-    margin-left: 1.4vw;
-    margin-top: 1.6vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 2.3vw;
+    margin-top: 0.5vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
     border-radius: 10%;
     border: 1px solid white;
+    
 }
 #musica a{
     color: white;
@@ -239,20 +240,15 @@ padding-top: 10vh;
     font-family: 'Dancing Script', cursive;
 }
 #musica:hover{
-    background-color: red;
-    margin-top: 2vw;
-    /* margin-left: 0.5vw; */
+    background-color: transparent;
+    color: gray;
     
 }
-#pausa-play{
+#titulomusica{
     color: white;
-    font-size: 1.5vw;
-    padding-top: 2vw;
-    margin-left: 0vw;
-    display: none;
-    cursor: pointer;
-    
-    font-family: 'Dancing Script', cursive;
+    font-size: 1.2vw;
+    margin-left: 0.4vw;
+    margin-top: 0.5vw;
 }
 #stop{
     color: white;
@@ -381,13 +377,14 @@ font-size: 0.8vw;
     /* background-color : transparent; */
     
     font-family : Verdana, Arial, Helvetica;
-    font-size : 8pt;
+    font-size : 3vh;
     
 }
 #reloj input{
     background-color : transparent;
     color : White;
     text-align : center;
+    font-size: 1.5vh;
 }
 
 
